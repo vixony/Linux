@@ -3,7 +3,7 @@
 
 使用root用户登录，下面的操作基本都没有root的困扰，如果非root用户请切换至root用户操作。
 
-1、查看系统当前的shell
+### 1、查看系统当前的shell
 ```
 echo $SHELL
 ```
@@ -13,7 +13,7 @@ echo $SHELL
 ```
 PS.默认的shell一般都是bash
 
-2、查看bin下是否有zsh包
+### 2、查看bin下是否有zsh包
 ```
 cat /etc/shells
 ```
@@ -28,7 +28,7 @@ cat /etc/shells
 
 PS.默认没有安装zsh
 
-3、安装zsh包
+### 3、安装zsh包
 ```
 yum -y install zsh
 ```
@@ -48,7 +48,7 @@ cat /etc/shells
 
 现在zsh已经安装完成了，需要把系统默认的shell由bash切换为zsh
 
-3、切换shell至zsh，代码如下：
+### 3、切换shell至zsh，代码如下：
 ```
 chsh -s /bin/zsh
 ```
@@ -78,11 +78,12 @@ echo $SHELL
 
 下面开始安装oh-my-zsh
 oh-my-zsh源码是放在github上的，所以先要安装git
-4、安装git：
+
+### 4、安装git：
 ```
 yum -y install git
 ```
-5、安装oh-my-zsh:
+### 5、安装oh-my-zsh:
 ```
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 ```
@@ -103,7 +104,8 @@ p.p.s. Get stickers and t-shirts at http://shop.planetargon.com.
 ```
 如果添加插件、更改themes请修改~/.zshrc或自行查询其它资料。
 
-至此，zsh安装完毕，开始享受oh-my-zsh吧，如果执行命令时提示warning: cannot set LC_CTYPE locale可用以下方法解决：
+### 至此，zsh安装完毕，
+#### 开始享受oh-my-zsh吧，如果执行命令时提示warning: cannot set LC_CTYPE locale可用以下方法解决：
 
 修改profile：
 ```
